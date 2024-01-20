@@ -135,16 +135,11 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String checkString(String a) {
 
-        if(string.isEmpty(a)){
-        return null;
-        }
-        else if (string.isBlank(a)){
-        return 'Empty'; 
-        }
-        else if(string.isNotEmpty(a)){
+        if (string.isBlank(a)) {
+            return 'Empty';
+        } else {
             return 'Contains Text';
         }
-        return null;
     }
 
     /**
