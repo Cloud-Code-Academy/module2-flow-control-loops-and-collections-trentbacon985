@@ -5,6 +5,19 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+public static String checkNumber(Integer a) {
+
+    if(a<0){
+        return 'Negative'; 
+    }
+        else if(a>0){
+            return 'Positive';
+        }
+        else if(a == 0){
+        System.debug('Zero');
+        return 'Zero';
+        }
+        else{
+            return null;
+        }
+    }
